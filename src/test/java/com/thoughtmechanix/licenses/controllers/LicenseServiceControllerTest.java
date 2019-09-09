@@ -58,7 +58,7 @@ public class LicenseServiceControllerTest extends AbstractTest {
         License result = licenseServiceControllerMock.findById(ORGANIZATION_ID, LICENSE_ID);
 
         Assert.assertEquals(LICENSE_ID, result.getId());
-
+ 
         MvcResult mvcResult = mockMvc.perform(MockMvcRequestBuilders.get(uri)
                                     .accept(MediaType.APPLICATION_JSON_VALUE))
                                     .andReturn();
